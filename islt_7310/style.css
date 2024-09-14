@@ -1,0 +1,20 @@
+/* style.css */
+h1 {
+    color: #cc0033; /*  Color is  (a shade of red) */
+}
+p.reflection::first-letter {
+    font-size: 2em;
+    color: ff9999; 
+    font-weight: bold;
+}
+
+p.reflection:not(:first-of-type) {
+    text-indent: 30px;
+}
+
+p.reflection {
+    box-sizing: border-box;
+    padding: 10px; 
+    margin: 0; 
+    border: none; /* No border */
+}
