@@ -1,0 +1,95 @@
+/* style.css */
+h1 {
+    color: #cc0033; /*  Color is  (a shade of red) */
+}
+p.reflection::first-letter {
+    font-size: 2em;
+    color: ff9999; 
+    font-weight: bold;
+}
+
+p.reflection:not(:first-of-type) {
+    text-indent: 30px;
+}
+
+p.reflection {
+    box-sizing: border-box;
+    padding: 10px; 
+    margin: 0; 
+    border: none; /* No border */
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #e80c0c;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+li {
+    background: #fff;
+    width: 150px;
+    margin: 0 15px 15px 0;
+    padding: 5px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+header{
+    width:96.875%;
+    padding: 15px 1.5625%;
+    border-bottom: 2px soild black;
+}
+main{
+    width:59.375%;
+    padding: 15px 1.5625%;
+    float: left;
+}
+aside{
+    width: 34.375%;
+    padding: 15px 1.5625%;
+    float: right;
+}
+footer{
+    clear: both;
+    width: 96.875%;
+    padding: 15px 1.5625%;
+    border-top: 2px solid black;
+}
+@media print {
+    body {
+        margin: 1in; /* Set margins to 1 inch */
+        font-family: 'Times New Roman', serif; /* Default serif font */
+        color: black; /* Set all text to black */
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif; /* Use custom font for the h1 */
+    }
+
+    p, ul, blockquote, footer {
+        font-family: 'Times New Roman', serif; /* Ensure other text is serif */
+    }
+
+    /* Hide non-printable elements (like logos or icons) if necessary */
+    header img, .no-print {
+        display: none;
+    }
+}
